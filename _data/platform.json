@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Spotify",
+    "link": "",
+    "image": "/assets/images/spotify.svg"
+  },
+  {
+    "name": "Apple Podcast",
+    "link": "",
+    "image": "/assets/images/applepodcasts.svg"
+  }
+]

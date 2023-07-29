@@ -1,0 +1,31 @@
+<footer class="bg-yellow-500">
+  <div
+    class="mx-auto max-w-7xl px-6 py-8 md:py-12 md:flex md:items-center md:justify-between lg:px-8"
+  >
+    <div
+      class="flex flex-col justify-center items-center space-y-4 md:space-y-0 md:space-x-6 md:order-2 md:flex-row"
+    >
+      <div
+        class="flex justify-center items-center space-x-4 md:border-r-2 md:border-black md:pr-6"
+      >
+        {% for item in site.data.platform %}
+        <a class="py-2 mr-2" href="{{ item.link }}"
+          ><img width="42" height="42" src="{{ item.image }}" alt="{{ item.name }}"
+        /></a>
+        {% endfor %}
+      </div>
+      <div class="flex justify-center items-center space-x-4">
+        {% for item in site.data.social %}
+        <a class="py-2 mr-2" href="{{ item.link }}"
+          ><img width="32" height="32" src="{{ item.image }}" alt="{{ item.name }}"
+        /></a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="mt-8 md:order-1 md:mt-0">
+      <p class="text-center text-xs leading-5 text-gray-500">
+        &copy; 2023 Curiodyssée Tous droits réservés.
+      </p>
+    </div>
+  </div>
+</footer>

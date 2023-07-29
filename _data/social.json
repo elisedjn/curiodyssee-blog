@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Instagram",
+    "link": "",
+    "image": "https://simpleicons.org/icons/instagram.svg"
+  },
+  {
+    "name": "Facebook",
+    "link": "",
+    "image": "https://simpleicons.org/icons/facebook.svg"
+  },
+  {
+    "name" : "WhatsApp",
+    "link" : "",
+    "image": "https://simpleicons.org/icons/whatsapp.svg"
+  }
+]
