@@ -1,5 +1,5 @@
-url: ''
-baseurl: ''
+url: 'https://elisedjn.github.io'
+baseurl: 'curiodyssee-blog'
 title: 'Jekyllwind'
 
 plugins:
