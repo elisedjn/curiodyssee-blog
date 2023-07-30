@@ -2,28 +2,52 @@
 layout: default
 ---
 
-{% include heading.html heading=page.title description=page.description align="center"
-date=page.date %}
+<div class="p-6 md:py-12 lg:w-10/12 md:text-center mx-auto">
+  {% if page.date %}
+  <div class="font-medium text-gray-700">{{ page.date | date_to_long_string }}</div>
+  {% endif %}
+  <h1 class="heading text-4xl md:text-6xl font-bold font-sans md:leading-tight">
+    {{ page.title }}
+  </h1>
+  {% if page.description %}
+  <h2 class="text-xl text-gray-600 mt-2">{{ page.description }}</h2>
+  {% endif %}
+</div>
 
 <img width="1600" height="900" src="{{ page.image }}" />
 
-<div class="flex flex-col md:flex-row py-6 md:py-12">
-  <div class="w-full md:w-3/12 pr-3">
+<div class="flex flex-col md:flex-row pb-6 md:py-12">
+  <div
+    class="md:sticky md:top-28 w-full md:w-3/12 md:pr-8 max-h-20 md:max-h-96 overflow-hidden"
+  >
     {% if page.categories %}
-    <div class="hidden md:block">
-      {% for category in page.categories %} category badge {% endfor %}
+    <div class="hidden md:block md:py-2">
+      {% for category in page.categories %} {% include category-badge.html %} {% endfor %}
     </div>
+    {% endif %} {% if page.src %}
+    <iframe
+      class="bg-[#9C6F0F] md:mt-2"
+      src="{{ page.src }}"
+      width="100%"
+      height="100%"
+      frameborder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
     {% endif %}
   </div>
 
-  <div class="w-full md:w-9/12">
+  <div class="w-full md:w-9/12 p-6 md:p-0 font-sans">
     <div class="prose">{{ content }}</div>
   </div>
 </div>
 
 {% if page.categories %}
-<div class="py-6 mt-6 border-t-2 block md:hidden">
+<div class="p-6 mt-6 border-t-2 block md:hidden">
   <h3 class="text-sm font-medium mb-1">Categories</h3>
-  <div>{% for category in page.categories %} category badge {% endfor %}</div>
+  <div>
+    {% for category in page.categories %} {% include category-badge.html %} {% endfor %}
+  </div>
 </div>
 {% endif %}

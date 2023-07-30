@@ -1,19 +1,20 @@
-<article class="flex flex-col items-start justify-between bg-white rounded-2xl">
+<article
+  class="flex flex-col items-start justify-between bg-white rounded-2xl md:rounded-none"
+>
   <div class="relative w-full">
     {% if post.thumbnail %}
     <a class="bg-gray-100" href="{{ post.url | relative_url }}">
       <img
         alt="{{ post.title }}"
         src="{{ post.thumbnail | relative_url }}"
-        class="aspect-[16/9] w-full object-cover sm:aspect-[2/1] lg:aspect-[3/2] rounded-t-2xl"
+        class="aspect-[16/9] w-full object-cover sm:aspect-[2/1] lg:aspect-[3/2] rounded-t-2xl md:rounded-none"
       />
     </a>
     {% endif %}
-    <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
   </div>
   <div class="max-w-xl p-4">
-    <div class="flex items-center gap-x-4 text-xs">
-      <time datetime="2020-03-16" class="text-gray-500"
+    <div class="flex items-center gap-x-4 text-sm">
+      <time datetime="2020-03-16" class="text-purple-600"
         >{{ post.date | date_to_long_string }}</time
       >
       {% if post.categories %} {% for category in post.categories %} {% include

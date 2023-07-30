@@ -1,12 +1,18 @@
 url: 'https://elisedjn.github.io'
 baseurl: 'curiodyssee-blog'
-title: 'Jekyllwind'
+title: 'Curiodyssée'
+collections_dir: collections
 
 plugins:
   - jekyll-postcss
 
 postcss:
   cache: false
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:path/
 
 exclude:
   - package.json
