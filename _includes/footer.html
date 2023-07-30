@@ -1,4 +1,4 @@
-<footer class="bg-yellow-500">
+<footer class="bg-amber-400">
   <div
     class="mx-auto max-w-7xl px-6 py-8 md:py-12 md:flex md:items-center md:justify-between lg:px-8"
   >
@@ -9,15 +9,19 @@
         class="flex justify-center items-center space-x-4 md:border-r-2 md:border-black md:pr-6"
       >
         {% for item in site.data.platform %}
-        <a class="py-2 mr-2" href="{{ item.link }}"
-          ><img width="42" height="42" src="{{ item.image }}" alt="{{ item.name }}"
+        <a class="py-2 mr-2" href="{{ item.link }}" target="_blank"
+          ><img
+            width="42"
+            height="42"
+            src="{{ item.image | relative_url  }}"
+            alt="{{ item.name }}"
         /></a>
         {% endfor %}
       </div>
       <div class="flex justify-center items-center space-x-4">
         {% for item in site.data.social %}
-        <a class="py-2 mr-2" href="{{ item.link }}"
-          ><img width="32" height="32" src="{{ item.image }}" alt="{{ item.name }}"
+        <a class="py-2 mr-2" href="{{ item.link }}" target="_blank"
+          ><img width="32" height="32" src="{{ item.image  }}" alt="{{ item.name }}"
         /></a>
         {% endfor %}
       </div>

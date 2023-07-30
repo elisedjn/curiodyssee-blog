@@ -1,17 +1,17 @@
 [
   {
     "name": "Instagram",
-    "link": "",
+    "link": "https://www.instagram.com/curiodyssee/",
     "image": "https://simpleicons.org/icons/instagram.svg"
   },
   {
     "name": "Facebook",
-    "link": "",
+    "link": "https://www.facebook.com/profile.php?id=100095299300100",
     "image": "https://simpleicons.org/icons/facebook.svg"
   },
   {
     "name" : "WhatsApp",
-    "link" : "",
+    "link" : "https://chat.whatsapp.com/DpoZEthNJNf3GVLHsyHiG5",
     "image": "https://simpleicons.org/icons/whatsapp.svg"
   }
 ]

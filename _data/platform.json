@@ -1,12 +1,12 @@
 [
   {
     "name": "Spotify",
-    "link": "",
+    "link": "https://open.spotify.com/show/69QzkRTYJmKx4zGGbtO9hO?si=99873abcfc274e9a",
     "image": "/assets/images/spotify.svg"
   },
   {
     "name": "Apple Podcast",
-    "link": "",
+    "link": "https://podcasts.apple.com/fr/podcast/curiodyss%C3%A9e/id1689076121",
     "image": "/assets/images/applepodcasts.svg"
   }
 ]

@@ -1,18 +1,18 @@
-<article class="flex flex-col items-start justify-between">
+<article class="flex flex-col items-start justify-between bg-white rounded-2xl">
   <div class="relative w-full">
     {% if post.thumbnail %}
     <a class="bg-gray-100" href="{{ post.url | relative_url }}">
       <img
         alt="{{ post.title }}"
         src="{{ post.thumbnail | relative_url }}"
-        class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+        class="aspect-[16/9] w-full object-cover sm:aspect-[2/1] lg:aspect-[3/2] rounded-t-2xl"
       />
     </a>
     {% endif %}
     <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
   </div>
-  <div class="max-w-xl">
-    <div class="mt-8 flex items-center gap-x-4 text-xs">
+  <div class="max-w-xl p-4">
+    <div class="flex items-center gap-x-4 text-xs">
       <time datetime="2020-03-16" class="text-gray-500"
         >{{ post.date | date_to_long_string }}</time
       >
@@ -28,44 +28,9 @@
           {{ post.title }}
         </a>
       </h3>
-      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+      <p class="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
         {{ post.description }}
       </p>
     </div>
   </div>
 </article>
-
-<!-- <div class="flex flex-col md:flex-row w-full lg:w-10/12">
-  {% if post.thumbnail %}
-  <div class="md:mr-4 mb-2 md:mb-0 md:w-4/12">
-    <a class="bg-gray-100" href="{{ post.url | relative_url }}">
-      <img
-        width="640"
-        height="360"
-        class="rounded mb-3 hover:opacity-70 transition duration-300 ease-in-out"
-        alt="{{ post.title }}"
-        src="{{ post.thumbnail | relative_url }}"
-    /></a>
-  </div>
-  {% endif %}
-
-  <div class="flex-1">
-    <div class="flex items-center">
-      <div class="text-sm font-medium text-gray-700">
-        {{ post.date | date_to_long_string }}
-      </div>
-    </div>
-
-    <a href="{{ post.url | relative_url }}" class="hover:text-green-400">
-      <h2 class="text-2xl font-semibold mb-1">{{ post.title }}</h2>
-    </a>
-
-    <p class="text-base font-light text-gray-600 mb-4">{{ post.description }}</p>
-
-    {% if post.categories %}
-    <div class="mb-2">
-      {% for category in post.categories %} Category badge {% endfor %}
-    </div>
-    {% endif %}
-  </div>
-</div> -->

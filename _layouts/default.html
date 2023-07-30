@@ -4,12 +4,20 @@
     <meta charset="utf-8" />
     <meta content="ie=edge" http-equiv="x-ua-compatible" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
     <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet" />
   </head>
-  <body class="page {{page.bodyClass}}">
-    <div class="container mx-auto">
-      <div class="px-6 md:px-4">{{content}}</div>
-      {% include footer.html %}
-    </div>
+  <body
+    class="page {{page.bodyClass}} bg-stone-100 "
+    style="font-family: 'Handlee', sans-serif"
+  >
+    {% include header.html %}
+    <div class="container mx-auto">{{content}}</div>
+    {% include footer.html %}
   </body>
 </html>
