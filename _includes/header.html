@@ -1,4 +1,34 @@
-<header class="bg-white fixed top-0 w-full z-30 drop-shadow-md">
+<header id="header" class="bg-amber-400 fixed top-0 w-full z-30 drop-shadow-md">
+  <div
+    id="header-inside-container"
+    class="max-w-7xl mx-auto p-3 md:p-4 lg:px-8 flex items-center justify-center md:justify-between"
+  >
+    <a href="/" class="flex justify-start md:justify-center items-center gap-x-2">
+      <img
+        src="{{ '/assets/images/title.png' | relative_url }}"
+        alt="Curiodyssée"
+        class="block h-14 rounded-lg md:h-16 md:block"
+        id="title-image"
+      />
+      <h1
+        class="hidden text-2xl drop-shadow-lg md:hidden"
+        style="font-family: 'Parisienne', cursive"
+        id="title-text"
+      >
+        Curiodyssée
+      </h1>
+    </a>
+
+    <p class="hidden md:block text-sm leading-8 text-slate-500 italic">
+      Le podcast où nous explorons ensemble le monde fascinant des nouvelles expériences
+      et découvertes
+    </p>
+
+    <!-- <div>Search bar</div> -->
+  </div>
+</header>
+
+<!-- <header class="bg-white fixed top-0 w-full z-30 drop-shadow-md">
   <div class="max-w-7xl mx-auto px-6 py-6 lg:px-8 flex items-center justify-between">
     <a href="/" class="flex justify-start md:justify-center items-center gap-x-2">
       <img src="/assets/images/logo.jpeg" alt="logo" class="w-14 h-14 rounded-lg" />
@@ -17,4 +47,4 @@
 
     <div>Search bar</div>
   </div>
-</header>
+</header> -->
