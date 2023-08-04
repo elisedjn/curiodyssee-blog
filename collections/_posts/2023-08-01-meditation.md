@@ -7,6 +7,7 @@ description: La méditation, vieille de plusieurs millénaires, est bien plus qu
 thumbnail: 'https://images.unsplash.com/photo-1499810631641-541e76d678a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
 image: 'https://images.unsplash.com/photo-1499810631641-541e76d678a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
 src: 'https://open.spotify.com/embed/episode/0twROxgkprK26ILL1xHtgd?utm_source=generator'
+type: article
 ---
 
 _La méditation, vieille de plusieurs millénaires, est bien plus qu'une simple pratique spirituelle. C'est une porte ouverte vers un espace intérieur de paix, de calme et de clarté mentale. Dans cet article, nous explorerons les vertus de la méditation, les pièges courants à éviter pour les débutants, ainsi que les différentes méthodes de méditation qui existent. Que vous soyez novice ou déjà initié à cette pratique millénaire, embarquons ensemble pour un voyage intérieur vers la sérénité et l'épanouissement._
