@@ -14,7 +14,7 @@ logo:
   logo_mobile_width: '36px'
 
 seo:
-  meta_og_image: 'https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png'
+  meta_og_image: 'assets/images/curiodyssee-blog.png'
 
 plugins:
   - jekyll-postcss

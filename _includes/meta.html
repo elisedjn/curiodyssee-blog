@@ -34,7 +34,7 @@
 <meta property="og:description" content="{{ page.description }}" />
 {% endif %}
 
-<meta property="og:url" content="{{ page.url }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:site_name" content="Curiodyssée" />
 
 {% if page.image %}
