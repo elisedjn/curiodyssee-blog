@@ -1,5 +1,5 @@
 ---
-title: 'Réinventer sa carrière : Quelques exemples célèbres'
+title: 'Réinventer sa carrière : Exemples célèbres'
 date: 2023-09-28T02:49:03+01:00
 layout: post
 categories: ['Style de vie', 'Technologie']
