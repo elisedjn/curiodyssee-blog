@@ -3,7 +3,7 @@ title: 'Le minimalisme digital'
 date: 2023-08-12T02:49:03+01:00
 layout: post
 categories: ['Style de vie', 'Technologie']
-description: 'Découvrez les Bienfaits Transformateurs de la Désintoxication Digitale de 30 Jours'
+description: 'Découvrez les Bienfaits Transformateurs de la Désintoxication Digitale de 30 Jours.'
 thumbnail: 'https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
 image: 'https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
 src: 'https://open.spotify.com/embed/episode/0JXaNfT9XuBpr45qrrT9qD?utm_source=generator'

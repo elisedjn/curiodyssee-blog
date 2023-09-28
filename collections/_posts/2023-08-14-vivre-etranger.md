@@ -3,7 +3,7 @@ title: "Explorer le Monde et s'épanouir"
 date: 2023-08-14T02:49:03+01:00
 layout: post
 categories: ['Style de vie']
-description: "Oser l'Inconnu : Guide pour une Expérience Épanouissante à l'Étranger"
+description: "Oser l'Inconnu : Guide pour une Expérience Épanouissante à l'Étranger."
 thumbnail: 'https://lh3.googleusercontent.com/pw/AIL4fc_AfD6ZoB31JpOZ8wz1fZGAxzClqvGgG_UGTPdrRlcOipgO4la_Zn8SFTQQ1OsgvC41y_nK_iypZYLQuL4Xt0y6AuvQimPqu9ErP7T93i8TO6A4Tgfw7J99PzsRPUV3lw10mf5noYx0ob4O89d8oWrX7g=w2040-h1360-s-no?authuser=0'
 image: 'https://lh3.googleusercontent.com/pw/AIL4fc_AfD6ZoB31JpOZ8wz1fZGAxzClqvGgG_UGTPdrRlcOipgO4la_Zn8SFTQQ1OsgvC41y_nK_iypZYLQuL4Xt0y6AuvQimPqu9ErP7T93i8TO6A4Tgfw7J99PzsRPUV3lw10mf5noYx0ob4O89d8oWrX7g=w2040-h1360-s-no?authuser=0'
 src: 'https://open.spotify.com/embed/episode/1qdSpbeOMn52CKpCHoSJ8t?utm_source=generator'
