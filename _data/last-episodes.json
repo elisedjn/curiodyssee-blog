@@ -1,14 +1,14 @@
 [
   {
-    "src" : "https://open.spotify.com/embed/episode/1KfIeLgIMPQq5mGwkjjHNu?utm_source=generator",
+    "src" : "https://open.spotify.com/embed/episode/6b1foZMul2rpO7sB51TcvL?utm_source=generator",
     "class": ""
   },
   {
-    "src" : "https://open.spotify.com/embed/episode/0lC9uPTQ1J5RKEMsP6DcrN?utm_source=generator",
+    "src" : "https://open.spotify.com/embed/episode/1KfIeLgIMPQq5mGwkjjHNu?utm_source=generator",
     "class": "hidden md:block"
   },
   {
-    "src" : "https://open.spotify.com/embed/episode/00D8DgOesz52fGBDbFvsdX?utm_source=generator",
+    "src" : "https://open.spotify.com/embed/episode/0lC9uPTQ1J5RKEMsP6DcrN?utm_source=generator",
     "class": "hidden md:block"
   }
 ]
