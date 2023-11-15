@@ -1,0 +1,24 @@
+<article
+  class="flex flex-col items-start justify-between bg-white rounded-2xl md:rounded-none"
+>
+  <div class="relative w-full">
+    {% if site.time < post.date %}
+    <div class="bg-gray-100">
+      <img
+        alt="{{ post.title }}"
+        src="{{ post.thumbnail | relative_url }}"
+        class="aspect-[1/1] w-full object-cover opacity-50"
+      />
+    </div>
+    {% endif %}
+    {% if site.time >= post.date %}
+    <a class="bg-gray-100" href="{{ post.url | relative_url }}">
+      <img
+        alt="{{ post.title }}"
+        src="{{ post.thumbnail | relative_url }}"
+        class="aspect-[1/1] w-full object-cover"
+      />
+    </a>
+    {% endif %}
+  </div>
+</article>

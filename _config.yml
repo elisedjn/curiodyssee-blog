@@ -26,6 +26,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:path/
+  christmas:
+    output: true
+    permalink: /christmas-post/:path/
 
 defaults:
   - scope:
@@ -42,6 +45,11 @@ defaults:
     values:
       layout: category
       permalink: /category/:basename/
+  - scope:
+      path: ''
+      type: christmas-post
+    values:
+      layout: christmas-post
 
 exclude:
   - package.json
