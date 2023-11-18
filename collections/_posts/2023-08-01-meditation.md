@@ -24,7 +24,7 @@ On en entend de plus en plus parler, la méditation aurait de nombreux bénéfic
 
 - **Gestion des émotions** : La méditation nous apprend à observer nos émotions sans y réagir immédiatement. Elle nous permet de mieux comprendre nos réactions émotionnelles et d'y faire face avec plus de calme et de sérénité.
 
-Dans l’épisode du podcast, j’aborde d’autre vertus de la méditation qui ont été étudiées lors d’études scientifiques et qui ont été compilées dans [cet article](https://www.santescience.fr/benefices-meditation/). Je vous parle également d’une video d’Arte [disponible ici](https://www.youtube.com/watch?v=B_kJ7D-rNoo) (jusqu’au 30 septembre 2023
+Dans l’épisode du podcast, j’aborde d’autre vertus de la méditation qui ont été étudiées lors d’études scientifiques et qui ont été compilées dans [cet article](https://www.santescience.fr/benefices-meditation/). Je vous parle également d’une video d’Arte [disponible ici](https://www.youtube.com/watch?v=B_kJ7D-rNoo) (jusqu’au 30 septembre 2023)
 
 ![Respirez](https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80)
 
