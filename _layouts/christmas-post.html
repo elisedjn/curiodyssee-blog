@@ -66,7 +66,14 @@ layout: default
           src="{{ page.video }}"">
           </iframe> 
         </div>
-        {% endif %}
+      {% endif %}
+      {% if page.video2 %}
+        <div class="mt-6 h-52 md:h-96">
+          <iframe width="100%" height="100%"
+          src="{{ page.video2 }}"">
+          </iframe> 
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
