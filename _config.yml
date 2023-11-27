@@ -28,7 +28,7 @@ collections:
     permalink: /blog/:path/
   christmas:
     output: true
-    permalink: /christmas-post/:path/
+    permalink: /calendrier/:path/
 
 defaults:
   - scope:
