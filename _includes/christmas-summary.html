@@ -1,16 +1,7 @@
 <article
-  class="flex flex-col items-start justify-between bg-white rounded-2xl md:rounded-none"
+  class="flex flex-col items-start justify-between bg-blue-100 rounded-2xl overflow-hidden md:rounded-none"
 >
   <div class="relative w-full">
-    {% if site.time < post.date %}
-    <div class="bg-gray-500">
-      <img
-        alt="{{ post.title }}"
-        src="{{ post.thumbnail | relative_url }}"
-        class="aspect-[1/1] w-full object-cover opacity-30"
-      />
-    </div>
-    {% endif %}
     {% if site.time >= post.date %}
     <a class="bg-gray-100" href="{{ post.url | relative_url }}">
       <img
