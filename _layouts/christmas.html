@@ -18,3 +18,15 @@ body_classes: page-category
     </div>
   </div>
 </main>
+
+<script>
+  const containers = document.getElementsByClassName('christmas-post-container');
+  const today = new Date().setUTCHours(0, 0, 0, 0);
+  for (var i = 0; i < containers.length; i++){
+    const container = containers[i];
+    const date = Date.parse(container.getAttribute("date"))
+    if(new Date(date) <= today ){
+      container.classList.remove('hidden');
+    };
+  };
+</script>
