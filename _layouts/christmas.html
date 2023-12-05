@@ -27,6 +27,9 @@ body_classes: page-category
     const date = Date.parse(container.getAttribute("date"))
     if(new Date(date) <= today ){
       container.classList.remove('hidden');
+      const link = container.firstElementChild
+      link.href = `/calendrier/${container.getAttribute("date")}/`
+
     };
   };
 </script>
