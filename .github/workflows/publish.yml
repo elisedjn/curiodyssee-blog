@@ -1,8 +1,6 @@
 name: Daily publish
 
 on:
-  schedule:
-    - cron: '45 * * * *'
   push:
     branches:
       - main
