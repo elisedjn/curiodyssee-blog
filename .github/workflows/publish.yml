@@ -19,15 +19,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       # Run your project's build step
-      # - name: Build
-      #   run: npm install && npm run build
+      - name: Build
+        run: jekyll build
       - name: Publish
         uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: 'curiodyssee-blog' # e.g. 'my-project'
-          directory: 'dist' # e.g. 'dist'
+          directory: '_site' # e.g. 'dist'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
 
