@@ -2,7 +2,7 @@ name: Daily publish
 
 on:
   schedule:
-    - cron: '35 * * * *'
+    - cron: '45 * * * *'
   push:
     branches:
       - main
@@ -27,13 +27,13 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 311be569ba1724aca62869cc5497e94e
           projectName: curiodyssee-blog
-          directory: /
+          directory: /_site
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           # Optional: Switch what branch you are publishing to.
           # By default this will be the branch which triggered this workflow
           branch: main
           # Optional: Change the working directory
-          workingDirectory: my-site
+          # workingDirectory: my-site
           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
           wranglerVersion: '3'
