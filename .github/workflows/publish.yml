@@ -2,7 +2,7 @@ name: Daily publish
 
 on:
   schedule:
-    - cron: '35 * * * *'
+    - cron: '45 * * * *'
   push:
     branches:
       - main
@@ -34,6 +34,6 @@ jobs:
           # By default this will be the branch which triggered this workflow
           branch: main
           # Optional: Change the working directory
-          workingDirectory: my-site
+          # workingDirectory: my-site
           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
           wranglerVersion: '3'
