@@ -9,31 +9,54 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
-    name: Publish to Cloudflare Pages
+    name: Deploy to Cloudflare Pages
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      # Run a build step here if your project requires
-
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+      # Run your project's build step
+      # - name: Build
+      #   run: npm install && npm run build
+      - name: Publish
+        uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: 311be569ba1724aca62869cc5497e94e
-          projectName: /curiodyssee-blog
-          directory: _site
-          # Optional: Enable this if you want to have GitHub Deployments triggered
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: 'curiodyssee-blog' # e.g. 'my-project'
+          directory: '_site' # e.g. 'dist'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          # Optional: Switch what branch you are publishing to.
-          # By default this will be the branch which triggered this workflow
-          branch: main
-          # Optional: Change the working directory
-          # workingDirectory: my-site
-          # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
-          wranglerVersion: '3'
+
+
+# jobs:
+#   publish:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: read
+#       deployments: write
+#     name: Publish to Cloudflare Pages
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#       # Run a build step here if your project requires
+
+#       - name: Publish to Cloudflare Pages
+#         uses: cloudflare/pages-action@v1
+#         with:
+#           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+#           accountId: 311be569ba1724aca62869cc5497e94e
+#           projectName: /curiodyssee-blog
+#           directory: _site
+#           # Optional: Enable this if you want to have GitHub Deployments triggered
+#           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+#           # Optional: Switch what branch you are publishing to.
+#           # By default this will be the branch which triggered this workflow
+#           branch: main
+#           # Optional: Change the working directory
+#           # workingDirectory: my-site
+#           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
+#           wranglerVersion: '3'
