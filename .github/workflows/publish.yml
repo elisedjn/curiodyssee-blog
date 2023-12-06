@@ -1,11 +1,12 @@
 name: Daily publish
 
 on:
+  schedule:
+    - cron: '35 * * * *'
+  push:
+    branches:
+      - main
   workflow_dispatch:
-    tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
 
 jobs:
   publish:
