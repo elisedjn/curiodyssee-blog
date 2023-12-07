@@ -2,7 +2,7 @@ name: Daily publish
 
 on:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '15 */4 * * *'
   workflow_dispatch:
 
 jobs:
