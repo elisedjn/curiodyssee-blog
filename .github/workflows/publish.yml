@@ -1,32 +1,23 @@
 name: Daily publish
 
 on:
-  # schedule:
-  #   - cron: '45 * * * *'
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '15 * * * *'
   workflow_dispatch:
 
 jobs:
-  deploy:
+  deployment:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    name: Deploy to Cloudflare Pages
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Publish
-        uses: cloudflare/pages-action@1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'curiodyssee-blog'
-          directory: '_site'
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-
+    - name: Deploy
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/d45d564b-daf1-4e3e-9bda-41b690b345bc'
+        method: 'POST'
+        # username: ${{ secrets.AWX_USER }}
+        # password: ${{ secrets.AWX_PASSWORD }}
+        # customHeaders: '{"Content-Type": "application/json"}'
+        # data: '{"key_1": "value_1", "key_2": "value_2"}'
 
 # jobs:
 #   publish:
